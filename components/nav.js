@@ -28,7 +28,7 @@ export default function Nav() {
         </Text>
         <Breadcrumb>
           <BreadcrumbItem>
-            <BreadcrumbLink href="#">Home</BreadcrumbLink>
+            <BreadcrumbLink href="/">Home</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem>
             <BreadcrumbLink href="#">About</BreadcrumbLink>
@@ -37,7 +37,10 @@ export default function Nav() {
             <BreadcrumbLink href="#">Contact</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem>
-            <BreadcrumbLink href="#">Cart</BreadcrumbLink>
+            <BreadcrumbLink href="/cart">Cart</BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbItem>
+            <BreadcrumbLink href="/products">Products</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem>
             <ThemeButton />
@@ -52,11 +55,18 @@ export default function Nav() {
       >
         <ThemeButton />
         <Menu>
-          <MenuButton as={IconButton} icon={<BiMenu />} variant={"outline"} />
+          <MenuButton
+            mx={"1"}
+            as={IconButton}
+            icon={<BiMenu />}
+            variant={"outline"}
+          />
           <MenuList>
             <MenuItem>Home</MenuItem>
             <MenuItem>About</MenuItem>
             <MenuItem>Contact</MenuItem>
+            <MenuItem>Cart</MenuItem>
+            <MenuItem>Products</MenuItem>
           </MenuList>
         </Menu>
       </Flex>
